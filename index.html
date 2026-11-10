@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RemoveUrBG</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- heic2any for HEIC/HEIF conversion -->
+  <script src="https://unpkg.com/heic2any/dist/heic2any.min.js"></script>
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div id="loading">
+    <h1>RemoveUrBG</h1>
+    <div class="loader-bar"></div>
+    <p>Loading...</p>
+  </div>
+
+  <!-- Main App -->
+  <div id="app">
+    <!-- Top 30% -->
+    <div class="top">
+      <h1>RemoveUrBG</h1>
+    </div>
+
+    <!-- Bottom 70% -->
+    <div class="bottom">
+      <label for="upload" class="custom-upload">📁 Upload Image</label>
+      <input type="file" id="upload" accept="image/*">
+      <button id="removeBtn">🧹 Remove BG (Transparent)</button>
+      <div class="canvas-container">
+        <img id="resultImg" alt="Processed Image" />
+      </div>
+      <button id="downloadBtn">💾 Download Result</button>
+      <div id="status">Status: Waiting for upload...</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
